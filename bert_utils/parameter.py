@@ -71,13 +71,13 @@ parser.add_argument('--org_files_xlsx', type=str,
                     default=os.path.join(root_directory,"original_data/知识库增强数据_20210603.xlsx"),
                     help='原始训练数据')
 parser.add_argument('--train_csv', type = str,
-                    default=os.path.join(root_directory,"data/falv_files/train.csv"),
+                    default=os.path.join(root_directory,"data/train.csv"),
                     help='生成训练数据')
 parser.add_argument('--test_csv', type = str,
-                    default=os.path.join(root_directory,"data/falv_files/test.csv"),
+                    default=os.path.join(root_directory,"data/test.csv"),
                     help='生成测试数据')
 parser.add_argument('--dev_csv', type = str,
-                    default=os.path.join(root_directory,"data/falv_files/dev.csv"),
+                    default=os.path.join(root_directory,"data/dev.csv"),
                     help='生成以验证数据')
 
 

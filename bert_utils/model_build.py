@@ -4,9 +4,9 @@
 # @FileName  : model_build.py
 # @Software  : PyCharm
 import tensorflow as tf
-import modeling
-import text_rnn
-import optimization
+from bert_utils import modeling
+from bert_utils import text_rnn
+from bert_utils import optimization
 def create_model(bert_config, is_training, input_ids, input_mask, segment_ids,
                  labels, num_labels, use_one_hot_embeddings):
     # 1. 构建bert模型

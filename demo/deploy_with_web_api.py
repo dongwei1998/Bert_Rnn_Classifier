@@ -4,10 +4,10 @@
 # @FileName  : deploy_with_web_api.py
 # @Software  : PyCharm
 
-from parameter import args
+from bert_utils.parameter import args
 import tensorflow as tf
-import tokenization,modeling
-from model_build import model_fn_builder
+from bert_utils import tokenization,modeling
+from bert_utils.model_build import model_fn_builder
 import collections
 from flask import Flask, jsonify, request
 import os
@@ -337,7 +337,7 @@ if __name__ == '__main__':
     @app.route('/')
     @app.route('/index')
     def _index():
-        return "你好，欢迎使用Flask Web API，进入法律案件结果预测!!!"
+        return "你好，欢迎使用Flask Web API，进入文本分类任务!!!"
 
 
     @app.route('/predict', methods=['POST'])
